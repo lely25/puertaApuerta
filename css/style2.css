@@ -1,0 +1,211 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+/* Inicio*/
+.contenedor-navegacion{
+    background-color: black;
+}
+.contenido-navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo h2{
+    color: rgb(0, 183, 255);
+    font-weight: bold;
+    font-size: 30px;
+}
+.celeste{
+    color: rgb(0, 183, 255);
+}
+.navegacion a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+/*Formulario*/
+.contacto{
+    padding-top: 5px;
+
+}
+.contacto h3{
+    text-align: center;
+    color: rgb(0, 183, 255);
+    font-size: 30px;
+}
+
+@media(min-width: 768px) {
+    .contenido-contacto{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.informacion-contacto{
+    background-image: url('../img/contacto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+@media(min-width: 768px) {
+    .informacion-contacto{
+        height: 100vh;
+    }
+}
+.informacion-contacto::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+.informacion-contacto h3{
+    font-size: 4rem;
+    text-align: center;
+}
+.informacion-contacto p{
+    font-size: 2rem;
+}
+.informacion-contacto h3, .informacion-contacto p{
+    color: white;
+}
+.formulario-contacto{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+
+.input-contacto label{
+    color: white;
+    display: block;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+.input-contacto input{
+    padding: 1.2rem 1rem;
+}
+
+.input-contacto input, .input-contacto textarea{
+    width: 100%;
+    outline: none;
+}
+
+.input-contacto textarea{
+    resize: none;
+}
+
+.input-contacto input[type="submit"]{
+    width: auto;
+    padding: 1rem 3rem;
+    transition: background-color .3s ease-in-out;
+}
+
+.input-contacto input[type="submit"]:hover{
+    background-color: white;
+    color: rgb(0, 183, 255);
+}
+
+/*pie de página*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+
+}
+@media(min-width: 768px) {
+    .footer{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+    }
+}
+.redes a i{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/*Boton*/
+.btn{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+    background-color:  rgb(0, 183, 255);
+}
+.bordes{
+    border: 3px solid white;
+}
+@media(min-width: 768px) {
+    .btn{
+        border: 4px solid white;
+    }
+}
+.bordes:hover{
+    color: rgb(0, 183, 255);
+    font-weight: bold;
+    background-color: white;
+}
+@media(min-width: 768px) {
+    .btn{
+        font-size: 2.2rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .btn{
+        border: 4px solid rgb(0, 183, 255);
+    }
+}
+
+.btn-sky{
+    background-color:  rgb(0, 183, 255);
+    border: none;
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.btn-sky:hover{
+    background-color: black;
+    color: rgb(0, 183, 255);
+}
+.separador{
+    background-color: white;
+    margin: 80px;
+}

@@ -1,0 +1,339 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+.btn{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+}
+
+@media(min-width: 768px) {
+    .btn{
+        font-size: 2.2rem;
+    }
+}
+.bordes{
+    border: 3px solid white;
+}
+@media(min-width: 768px) {
+    .btn{
+        border: 4px solid white;
+    }
+}
+.bordes:hover{
+    color: rgb(0, 183, 255);
+    font-weight: bold;
+    background-color: black;
+}
+/* Inicio*/
+.contenedor-navegacion{
+    background-color: black;
+}
+.contenido-navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo h2{
+    color: rgb(0, 183, 255);
+    font-weight: bold;
+    font-size: 30px;
+}
+.celeste{
+    color: rgb(0, 183, 255);
+}
+.navegacion a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+/* PARTE 2*/
+.contenido-header{
+    position: relative;
+}
+.contenido-header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+.texto-encabezado{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto-encabezado h2{
+    color: white;
+    font-size: 40px;
+}
+.texto-encabezado h4{
+    color: white;
+}
+@media(min-width: 768px) {
+    .texto-encabezado h2{
+        font-size: 8rem;
+    }
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+}
+
+@media(min-width: 768px) {
+    .btn{
+        font-size: 2.2rem;
+    }
+}
+.bordes{
+    border: 3px solid black;
+}
+@media(min-width: 768px) {
+    .btn{
+        border: 4px solid white;
+    }
+}
+.bordes:hover{
+    color: rgb(0, 183, 255);
+    font-weight: bold;
+    background-color: white;
+}
+/*Galería*/
+.nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
+    justify-content: center;    
+}
+.texto-nosotros h2{
+    font-weight: bold;
+    font-size: 50px;
+}
+.galeria img{
+    width: 250px;
+    margin: 0px;
+}
+.texto-nosotros{
+    width: 40%;
+    justify-content: center;
+}
+.imagen-nosotros{
+    width: 60%;
+    margin-left: 40px;
+}
+@media(min-width: 768px) {
+    .nosotros{
+        flex-wrap: nowrap; 
+    }
+}
+/*Separador*/
+
+.melanie {
+    display: grid;
+    background-color: rgb(0, 183, 255);
+    height: 250px;
+    padding: 40px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    
+}
+.btnempezar,
+.contacto2 {
+    background: black;
+    width: 200px;
+    border-radius: 3px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+.btnempezar:hover,
+.contacto2:hover {
+    background-color: cadetblue
+}
+
+.contacto2 {
+    position: absolute;
+    right: 10px;
+}
+
+/*Informacion*/
+.informacion{
+    background: white;
+}
+.contenido-informacion{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, auto);
+}
+.contenido-informacion .caja-padre{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-content: center;
+    text-align: center;
+}
+.contenido-informacion div{
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+.contenido-informacion .caja1,
+.contenido-informacion .caja2,
+.contenido-informacion .caja3,
+.contenido-informacion .caja4,
+.contenido-informacion .caja5,
+.contenido-informacion .caja6{
+    border: 2px solid #e1e1ee;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+/*Perfiles*/
+.comentarios{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.contenedor-comentario{
+    max-width: 1120px;
+    width: 100%;
+    background-color: black;
+    padding: 40px 0;
+}
+.contenido-comentario{
+    margin: 0 40px;
+}
+.contenido-img,
+.card-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.contenido-img{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 183, 255);
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(0, 183, 255);
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: white;
+}
+.card{
+
+    border-radius: 25px;
+    background-color: white;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(0, 183, 255);
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color:rgb(0, 183, 255);
+}
+.descripcion{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+/*pie de página*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+
+}
+@media(min-width: 768px) {
+    .footer{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+    }
+}
+.redes a i{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}

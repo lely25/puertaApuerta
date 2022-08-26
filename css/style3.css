@@ -1,0 +1,246 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+}
+
+@media(min-width: 768px) {
+    .btn{
+        font-size: 2.2rem;
+    }
+}
+.bordes{
+    border: 3px solid white;
+}
+@media(min-width: 768px) {
+    .btn{
+        border: 4px solid white;
+    }
+}
+.bordes:hover{
+    color: rgb(0, 183, 255);
+    font-weight: bold;
+    background-color: white;
+}
+/* Inicio*/
+.contenedor-navegacion{
+    background-color: black;
+}
+.contenido-navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo h2{
+    color: rgb(0, 183, 255);
+    font-weight: bold;
+    font-size: 30px;
+}
+.celeste{
+    color: rgb(0, 183, 255);
+}
+.navegacion a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+img{
+    max-width: 100%;
+    width: 300px;
+    height: 230px;
+    border-radius: 5px;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+@media(min-width: 768px) {
+    .btn{
+        font-size: 2.2rem;
+    }
+}
+@media(min-width: 768px) {
+    .btn{
+        border: 4px solid white;
+    }
+}
+/* PARTE 2*/
+.contenido-header{
+    position: relative;
+}
+.contenido-header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+.texto-encabezado{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto-encabezado h2{
+    color: white;
+    font-size: 40px;
+}
+.texto-encabezado h4{
+    color: white;
+}
+.texto-encabezado h3{
+    color: white;
+    font-size: 40px;
+}
+@media(min-width: 768px) {
+    .texto-encabezado h2{
+        font-size: 8rem;
+    }
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+
+/*Destinos*/
+.menu{
+    padding-top: 3px;
+    margin-bottom: 20px;
+}
+.texto-destinos{
+    text-align: center;
+    font-size: 5rem;
+}
+.btn-sky{
+    background-color:  rgb(0, 183, 255);
+    border: none;
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.btn-sky:hover{
+    background-color: black;
+    color: rgb(0, 183, 255);
+}
+.botones-destinos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.botones-destinos button{
+    flex: 0 0 calc(50% -1rem);
+    padding: 1rem 3rem;
+}
+@media(min-width: 768px) {
+    .botones-destinos button{
+        flex: unset;
+    }
+    .botones-destinos{
+        display: inline-block;
+    }
+    
+}
+
+
+@media(min-width: 768px) {
+    .destinos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+}
+
+.destino{
+    flex: 0 0 calc(33.33% - 1rem);
+    border: 2px solid #e1e1ee;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.destino img{
+    text-align: center;
+}
+.destino h2{
+    text-align: center;
+}
+.destino p{
+    font-size: 15px;
+}
+.precio{
+    display: flex;
+    justify-content: space-between;
+}
+.precio p{
+    font-weight: bold;
+    font-size: 20px;
+}
+.precio a{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 183, 255);
+    height: 3.8rem;
+}
+.precio a i{
+    color: black;
+}
+/*pie de página*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+
+}
+@media(min-width: 768px) {
+    .footer{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+    }
+}
+.redes a i{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
